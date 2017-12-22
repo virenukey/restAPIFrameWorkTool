@@ -75,7 +75,6 @@ def testRun():
                 log.logger.error("Test case %d passed" % (a+1))
                 log.logger.debug("Test case \"%s\" passed" % my_dict['Description'][a])
                 print ("Test case %d passed" % (a+1))
-            
     except Exception as e:
         print ("caught exception during test run", e)
         
