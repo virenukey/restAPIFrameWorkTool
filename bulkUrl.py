@@ -7,7 +7,6 @@ try:
 except ImportError as e:
     print ("Import of module in test failed", e)
 
-
 parser = argparse.ArgumentParser(description='to select particular url to test')   
 parser.add_argument('-u','--urlNum', help='Description for foo argument', required=True)
 args = parser.parse_args()
