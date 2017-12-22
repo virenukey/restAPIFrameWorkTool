@@ -21,8 +21,8 @@ def testSetup():
     log.logger.info("Setting file location for test case")
     fileName = setuptest['location']+'\\'+setuptest['fileName']
     
-    log.logger.warning("Reading test data from test case xlsx")
-    log.logger.info("Still reading test data from test case xlsx")
+    log.logger.warning("Reading test data from %s" % fileName)
+    log.logger.info("Still reading test data from %s" % fileName)
     my_dict = pyexcel.get_dict(file_name=fileName, name_columns_by_row=0)
     return my_dict
 
