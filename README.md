@@ -1,4 +1,4 @@
-Framework tool for RESTFul API test
+RESTFul API Framework tool
 ====================================
 
 Framework for testing (RESTful) HTTP/HTTPS APIs
