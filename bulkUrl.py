@@ -38,7 +38,6 @@ def testRun():
                 print ("Description: %s" %(my_dict['Description'][i]))
                 try:
                     log.logger.warning("Executing test case %d" % (i+1))
-    
                     resp = Runner.runTest(baseurl=url, path=my_dict['Path'][i], params=my_dict['Params'][i], 
                                           body=my_dict['Body'][i], json=my_dict['Json'][i], data=my_dict['Data'][i], 
                                           files=None, auth=my_dict['Auth'][i], method=my_dict['Method'][i])
