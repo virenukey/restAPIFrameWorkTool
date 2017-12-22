@@ -45,6 +45,7 @@ Components
 6. scripts: Consists of individual test cases
 7. bulkUrl.py : Driver file to drive and run test cases
 8. constructURL: Constructs the REST URL
+9. logger.py : Logging test case activities
 
 Example Test case
 =================
@@ -60,8 +61,7 @@ Individual test case can be run using command:
 
 Limitations
 =============
-1. Need to incorporate REST DELETE methods
-2. Neet to parse HTML and XLM responses
+1. Neet to parse HTML and XLM responses
 
 Enhancements
 =============
@@ -69,4 +69,7 @@ Enhancements
 2. Doc strings need to be implemented
 3. Coding standards need to be implemented
 
-# restAPIFrameWorkTool
+Created by
+===========
+- Virendra Ukey
+- Email : viruukey@gmail.com
