@@ -41,8 +41,8 @@ def testRun():
                     log.logger.warning("Executing test case %d" % (i+1))
     
                     resp = Runner.runTest(baseurl=url, path=my_dict['Path'][i], params=my_dict['Params'][i], 
-                                   body=my_dict['Body'][i], json=my_dict['Json'][i], data=my_dict['Data'][i], 
-                                   files=None, auth=my_dict['Auth'][i], method=my_dict['Method'][i])
+                                          body=my_dict['Body'][i], json=my_dict['Json'][i], data=my_dict['Data'][i], 
+                                          files=None, auth=my_dict['Auth'][i], method=my_dict['Method'][i])
                     
                     log.logger.warning("Verifying test case %d with expected result" % (i+1))
                     assert (my_dict['Expected'][i] == resp.status_code)
@@ -62,8 +62,8 @@ def testRun():
                 print ("Description: %s" %(my_dict['Description'][a]))
                 print ("Running test case %d" % (a+1))
                 resp = Runner.runTest(baseurl=my_dict['BaseUrl'][a], path=my_dict['Path'][a], params=my_dict['Params'][a], 
-                                    body=my_dict['Body'][a], json=my_dict['Json'][a], data=my_dict['Data'][a], 
-                                    files=None, auth=my_dict['Auth'][a], method=my_dict['Method'][a])
+                                      body=my_dict['Body'][a], json=my_dict['Json'][a], data=my_dict['Data'][a], 
+                                      files=None, auth=my_dict['Auth'][a], method=my_dict['Method'][a])
                 
                 log.logger.warning("Verifying test case %d with expected result" % (a+1))
                 assert (my_dict['Expected'][a] == resp.status_code)
