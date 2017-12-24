@@ -34,6 +34,7 @@ def testRun():
             log.logger.warning("Executing all Test cases")
             log.logger.info("Executing all test cases")
             for i, url in enumerate(my_dict['BaseUrl']):
+                print "="*50
                 print ("Running test case %d" % (i+1))
                 print ("Description: %s" %(my_dict['Description'][i]))
                 try:
@@ -57,8 +58,9 @@ def testRun():
             try:
                 a = int(args.urlNum)-1
                 log.logger.warning("Executing test case %d" % (a+1))
-                print ("Description: %s" %(my_dict['Description'][a]))
+                print "="*50
                 print ("Running test case %d" % (a+1))
+                print ("Description: %s" %(my_dict['Description'][a]))
                 resp = Runner.runTest(baseurl=my_dict['BaseUrl'][a], path=my_dict['Path'][a], params=my_dict['Params'][a], 
                                       body=my_dict['Body'][a], json=my_dict['Json'][a], data=my_dict['Data'][a], 
                                       files=None, auth=my_dict['Auth'][a], method=my_dict['Method'][a])
