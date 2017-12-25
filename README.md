@@ -4,7 +4,8 @@ RESTFul API Framework tool
 Framework for testing (RESTful) HTTP/HTTPS APIs
 =================================================
 This framework tool allows you to test for various REST URL APIs with various Input Parameters.
-The test case can just be written to xlsx sheet and will be consumed by driver written in Python
+The test case can just be written to xlsx sheet and will be consumed by driver written in Python laungauge.
+This framework allows to test API with dynamic data to test Positive, Negetive, Boundary value and equivalnce partition tests.
 
 
 Advantage of this framework
@@ -50,13 +51,14 @@ Components
 Example Test case
 =================
 Please refer following example test case to tests various REST URL in its individual methods e.g GET, POST..etc
-- testcase1.xlsx
+- testcaseData.xlsx
 
 Run a test
 ==========
 Individual test case can be run using command:
-- python bulkUrl.py -u all (To verify all REST URLs mentioned in xlsx sheet)
-- python bulkUrl.py -u 3 (To verify specific REST URL, in this case url number 3)
+- python bulkUrl.py -u all -d 3 (To verify all REST URLs mentioned in xlsx sheet)
+- python bulkUrl.py -u 3 -d 3(To verify specific REST URL, in this case url number 3)
+- Note "-u" is for test case number and "-d" is for supplying dynamic test data
 
 
 Limitations
@@ -65,9 +67,8 @@ Limitations
 
 Enhancements
 =============
-1. Dynamic test data to be implemented e.g. to verify REST URL with various data combinations as a part of Parameters
-2. Doc strings need to be implemented
-3. Coding standards need to be implemented
+1. Doc strings need to be implemented
+2. Coding standards need to be implemented
 
 Created by
 ===========
