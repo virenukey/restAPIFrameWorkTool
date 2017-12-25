@@ -1,0 +1,11 @@
+2017-12-24 21:11:27,684 - WARNING - Getting test case file name
+2017-12-24 21:11:27,684 - INFO - Setting file location for test case
+2017-12-24 21:11:27,684 - WARNING - Reading test data from E:\pythonpractice\apixls\testcases\testcaseData.xlsx
+2017-12-24 21:11:27,694 - INFO - Still reading test data from E:\pythonpractice\apixls\testcases\testcaseData.xlsx
+2017-12-24 21:11:27,723 - WARNING - Into test case execution
+2017-12-24 21:11:27,723 - INFO - Executing test cases
+2017-12-24 21:11:27,723 - WARNING - Executing test case 4
+2017-12-24 21:11:27,723 - WARNING - Verifying all data sets for test case 4
+2017-12-24 21:11:28,043 - WARNING - Verifying test case 4 with expected result
+2017-12-24 21:11:28,043 - ERROR - Test case 4 passed with all test data
+2017-12-24 21:11:28,043 - DEBUG - Test case "Verifying POST request for "http://beta.speedtest.net"" passed
